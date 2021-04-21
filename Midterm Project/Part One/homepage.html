@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Currency Converter</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="js/Script.js"></script>
+</head>
+<body>
+    <h2>Currency Exchange</h2>
+    <form name="converter">
+        <table border="0">
+        <tr>
+        <td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+        </tr>
+        <tr>
+        <td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Canadian Dollar</td><td><input type="text" name="cad" onChange="cadConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Bitcoin (BTC)</td><td><input type="text" name="btc" onChange="btcConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Ethereum(ETH)</td><td><input type="text" name="eth" onChange="ethConverter()" /></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center">
+        <div id="button"></div>
+        </td>
+
+        </tr>
+        </table>
+        </form>
+</body>
+</html>

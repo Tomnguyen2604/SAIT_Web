@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Name this web page</title>
+    <script type='text/javascript' src='ExampleCalculator.js'></script>
+    <link type='text/css' rel='stylesheet' href='ExampleCalculator.css'>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Hardwood Board foot calculator</h1>
+        <p>This board foot calculator allows you to quickly estimate the volume of hardwood lumber you want to buy.</p>
+        <div class="calculator">
+            <div id="quantity" class="input-field">
+                <label for="qty" class="label required">No. of pieces</label>
+                <input type="number" id="qty" name="QtyPieces" min=1 max=20000 value="1" onchange="CalculateBoardFeet();">
+            </div>
+            <div class="input-field">
+                <label for="thickness" class="label required">Thickness:</label>
+                <input type="number" id="thickness" name="Thickness" min=1 max=200 value="1" onchange="CalculateBoardFeet();">
+                <span id="unit-of-measure inches">inches</span>
+            </div>
+            <div class="input-field">
+                <label for="width" class="label required">Width:</label>
+                <input type="number" id="width" name="Width" value="1" min=1 max=200 onchange="CalculateBoardFeet();">
+                <span id="unit-of-measure feet">feet</span>
+            </div>
+            <div class="input-field">
+                <label for="length" class="label required">Length:</label>
+                <input type="number" id="lengthFeet" name="LengthFeet" value="10" min=0 max=200 onchange="CalculateBoardFeet();">
+                <span id="unit-of-measure length-feet">feet</span>
+                <span id="sub-length">
+                    <input type="number" id="lengthInch" name="LengthInch" value="0" min=1 max=12 onchange="CalculateBoardFeet();">
+                    <span id="unit-of-measure length-inches">inches</span>
+                </span>
+            </div>
+            <div class="output-field">
+                <label for="total-board-feet" class="label">Total Board Feet:</label>
+                <input type="number" id="total-board-feet" disabled name="TotalBoardage" value="10">
+                <span id="unit-of-measure boardfeet">board feet</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

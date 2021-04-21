@@ -1,0 +1,78 @@
+﻿html {
+    background-color: #10d48e;
+    background-repeat: contain;
+    background-size: cover;
+}
+body {
+    background-color: #10d48e;
+}
+
+@-webkit-keyframes test{
+  0%{
+      background-image: url('https://images.unsplash.com/photo-1542291771-64f962701184?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2138&q=80');
+  }
+  20%{
+      background-image: url('https://images.unsplash.com/photo-1542331514-91526580a6e6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80');
+  }
+  40%{
+      background-image: url('https://images.unsplash.com/photo-1542351567-cd7b06dc08d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1349&q=80');
+  }
+  60%{
+      background-image: url('https://images.unsplash.com/photo-1542317148-8b4bdccb33ea?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80');
+  }
+  80%{
+      background-image: url('https://images.unsplash.com/photo-1511358146320-eb018ab3e22e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+  }
+  100%{
+      background-image: url('https://images.unsplash.com/photo-1511358146320-eb018ab3e22e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+  }
+}
+header {
+    text-shadow: 0 1px;
+    align-items: center;
+
+}
+#transition {
+  margin-top: 15px;
+  width: 80%;
+  height: 500px;
+  float: right;
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: test 20s infinite;
+          animation: test 20s infinite;
+}
+
+
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    background-color: black;
+}
+
+
+    .navbar a {
+        color: ghostwhite;
+        padding: 20px 20px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+
+        .navbar a:hover {
+            color: black;
+        }
+h2, h3, h4 {
+    text-align: center;
+    Color: black;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }

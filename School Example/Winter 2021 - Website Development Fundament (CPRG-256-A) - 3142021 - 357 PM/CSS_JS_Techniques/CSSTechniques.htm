@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using CSS to show images on hover</title>
+    <!-- viewport is important for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="CSSTechniques.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="myJSfunctions.js"></script>
+    <script>
+        var x = myFunction("Parameter 1");
+    </script>
+    <script>
+        // debugger;
+        var x; 		// variable declaration of x
+        x = 3; 		// x is made into an integer
+        x = 3.14; 		// x is changed to be a float
+        x = "apple"; 	// x is changed to be a string
+        x = {
+            groceryList: ["apple", "banana"],
+            itemsInCart: 2
+        };          // x is now an object with properties
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Demonstrate of CSS hover to show hide on hover</h1>
+        <p>Hover over the smaller image of the 3d Printer filament to show a larger image using only CSS (no JavaScript required)</p>
+        <div class="small-icons">
+            <figure id="PETG-Green-Small" class="small-image">
+                <img  src="Images/PETG_Green_small.jpg"
+                    alt="small version of Green PETG 3D Printer filament">
+            </figure>
+            <figure id="PETG-Gold-Small" class="small-image" >
+                <img src="Images/PETG_Gold_small.jpg"
+                    alt="small version of Gold PETG 3D Printer filament">
+            </figure>
+            <figure id="PETG-Black-Small" class="small-image" >
+                <img src="Images/PETG_Black_small.jpg"
+                    alt="small version of Black PETG 3D Printer filament">
+            </figure>
+            <figure id="PEG-Green-Medium" class="hidden medium-image">
+                <img src="Images/PETG_Green_medium.jpg" alt="Medium version of Green PETG 3D Printer filament">
+            </figure>
+            <figure id="PEG-Black-Medium" class="hidden medium-image">
+                <img src="Images/PETG_Black_medium.jpg" alt="Medium version of Black PETG 3D Printer filament">
+            </figure>
+            <figure id="PEG-Gold-Medium" class="hidden medium-image">
+                <img src="Images/PETG_Gold_medium.jpg" alt="Medium version of Gold PETG 3D Printer filament">
+            </figure>
+            <figure id="PEG-Green-Large" class="hidden large-image">
+                <img src="Images/PETG_Green_Large.jpg" alt="Large version of Green PETG 3D Printer filament">
+            </figure>
+            <figure id="PEG-Gold-Large" class="hidden large-image">
+                <img src="Images/PETG_Gold_large.jpg" alt="Large version of Gold PETG 3D Printer filament">
+            </figure>
+            <figure id="PEG-Black-Large" class="hidden large-image">
+                <img src="Images/PETG_Black_Large.jpg" alt="Large version of Black PETG 3D Printer filament">
+            </figure>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

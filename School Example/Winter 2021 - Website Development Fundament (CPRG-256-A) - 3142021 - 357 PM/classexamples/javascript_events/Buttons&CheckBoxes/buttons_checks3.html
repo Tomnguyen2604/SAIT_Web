@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+<head>
+
+    <title>Buttons and Check Boxes</title>
+
+    <script type="text/javascript" src="b_and_c3.js">
+
+
+    </script>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="giftstore.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Today is: <span id="dtfield" ></span></h1>
+<br>
+<br>
+<h1>Welcome to Western Cascade Gifts</h1>
+<br>
+
+<form id="giftpackage">
+
+    <div id="info">
+
+        <label>Name</label><input type="text" size="20" id="clientname" /><br />
+        <label>Phone</label><input type="text" size="20" id="contactphone" /><br />
+    </div>
+
+    <table border=1 id="giftchoices">
+
+        <tr valign=top>
+
+            <td>
+                <b>Choose The Gift </b><br>
+                <input type=checkbox name=earrings checked value=100>Earrings<br>
+                <input type=checkbox name=broach value=150>Broach<br>
+                <input type=checkbox name=watch value=175>Watch<br>
+                <input type=checkbox name=necklace value=200>Necklace<br>
+            </td>
+
+            <td>
+                <b>
+                    Choose Your Box Type
+                </b>
+                <br>
+                <input type=radio name=specialty value=5 checked>Plain Box<br>
+                <input type=radio name=specialty value=7>Deluxe Box<br>
+                <input type=radio name=specialty value=10>Premium Box<br>
+
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <input type=button value="Price your gift" onClick="buttonandchecks();">
+</form>
+<br>
+<h2>Your Order Details</h2><h2><span id="result"></span></h2>
+</body>
+</html>

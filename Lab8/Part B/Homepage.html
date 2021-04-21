@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New City Bakeries</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="js/Script.js"></script>
+	<script src="js/XML.js"></script>
+</head>
+<body>
+
+        <div class="container">
+            <form id="register" onsubmit="setClient(); return false">
+                <h1>New City Bakeries</h1>
+                <label for="fname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required="required" />
+                <br /><br />
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required="required" />
+                <br /><br />
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address" placeholder="Address" required="required" />
+                <br /><br />
+                <label for="postalcode">Postal Code</label>
+                <input type="text" id="postalcode" name="postalcode" placeholder="Postol Code" pattern="[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ][0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]" required="required" />
+                <br /><br />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required="required" />
+                <br /><br />
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="phone" pattern="\D*([2-9]\d{2})(\D*)([2-9]\d{2})(\D*)(\d{4})\D*" required="required" />
+                <br /> <br />
+                <label for="layers">How many layers: </label>
+                <input type="radio" id="layers_1" name="layers" value="0"/> 1
+                <input type="radio" id="layers_2" name="layers" value="1"/> 2
+                <input type="radio" id="layers_3" name="layers" value="2"/> 3
+                <br /> <br />
+                <label for="shapes">Shape of Cake</label>
+                <br />
+    
+    
+    
+                <input type="checkbox" id="checkbox" name="layers" value="round" onclick="roundcake();" class="check"/>Round
+                <input type="number" min="15" max="30" id="round_radius" placeholder="Radius" style="display:none"/>
+    
+    
+                <br />
+                <input type="checkbox" id="checkbox2" name="layers" value="round" onclick="squarecake();" class="check"/>Square
+                <input type="number" min="15" max="30" id="square_length" placeholder="Length" style="display:none"/>
+                <input type="number" min="15" max="45" id="square_height" placeholder="Height" style="display:none"/>
+    
+                <br />
+    
+    
+    
+    
+                <label for="extra">Additional:</label>
+                <br />
+                <input type="checkbox" name="extra1" value="5" />Cream Cheese icing ($5)
+                <br />
+                <input type="checkbox" name="extra2" value="7" />Fruit and Almonds ($7)
+                <br />
+                <input type="checkbox" name="extra3" value="4">Fruit jam filling between layers ($4)
+                <br />
+                <button id="getName" onclick="addClient(); return false;">Submit</button>
+    
+            </form>
+            
+        </div>
+
+
+    <br />
+    <div>
+            <h3><span id="message2"></span></h3>
+            <h3><span id="message3"></span></h3>    
+        </div>
+
+        <div class="night">
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+          </div>
+            
+</body>
+</html>

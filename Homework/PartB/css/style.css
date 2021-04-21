@@ -1,0 +1,36 @@
+﻿body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00467F;
+    background-image: radial-gradient(ellipse farthest-corner at 80vw 15vh, rgba( 250, 240, 128, 0.5) 5%, rgba( 250,240,128,0) 95% );
+    background-attachment: fixed;
+}
+
+.glass {
+    background-color: rgba( 255,255, 255, 0.1); /* transparent white */
+    color: white;
+    display: inline-block;
+    border-radius: 17px;
+    padding: 10px;
+    margin: 0px 530px;
+}
+
+.glass_1 {
+    background-color: rgba( 255,255, 255, 0.1); /* transparent white */
+    color: white;
+    display: inline-block;
+    border-radius: 1.5px;
+    padding: 19px;
+    margin-right: 200px;
+}
+
+    .glass_1 table, th, td {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    height: 50%;
+}
+
+
+

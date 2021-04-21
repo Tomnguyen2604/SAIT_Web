@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
+    <title>Western Columbia Grocers</title>
+    <style>
+        body {
+            background-image: url('photo/cover.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="basic">
+        <div class="blur">
+            <div class="header">
+                <h1>Western Columbia Grocers</h1>
+            </div>
+            <form>
+                <form action="mailto:https://localhost/registration.html"method="post">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" maxlength="25" required="required" pattern="^(\w\w+)\s(\w+)$" /><br><br />
+                    <label for="address">Address</label>
+                    <input type="location" id="address" value="" required /><br /><br />
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" pattern="\D*([2-9]\d{2})(\D*)([2-9]\d{2})(\D*)(\d{4})\D*" required /><br /><br />
+                    <label for="age">Age</label>
+                    <input type="number" size="6" name="age" min="10" max="199" value="" /><br /><br />
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" value="" required /><br /> <br />
+                    <td>Registration Date</td>
+                    <td>
+                        <select name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="month">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="year">
+                            <option value="January">2020</option>
+                            <option value="February">2021</option>
+                            <option value="March">2022</option>
+                            <option value="April">2023</option>
+                            <option value="May">2024</option>
+                            <option value="June">2025</option>
+                            <option value="July">2026</option>
+                            <option value="August">2027</option>
+                            <option value="September">2028</option>
+                            <option value="October">2029</option>
+                            <option value="November">2030</option>
+                            <option value="December">2031</option>
+                        </select>
+                    </td>
+                    <br />
+                    <br />
+
+
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Submit Now!"> <a href="mailto:tomnguyen2604@gmail.com" />
+                </form>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+Arrays and Objects are a very important feature of JavaScript
+
+You need to learn how to use them properly
+
+Citations:
+----------
+JavaScript Debugger Statement
+    https://www.w3schools.com/jsref/jsref_debugger.asp
+
+Working with Arrays in JavaScript
+    https://www.w3schools.com/js/js_arrays.asp
+
+How to validate HTML Forms in JavaScript
+    https://www.w3schools.com/js/js_validation.asp
+    https://www.w3schools.com/js/js_validation_api.asp
+
+How to use JavaScript Template String Literals to format text
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+
+Instructions
+------------
+1) Start with the ArrayObject.html, and debug the code
+
+2) Then look at how NOT to use Arrays and Objects by reviewing DoNotDoThis.html
+
+3) Then review the Lab assignment for the techniques we want to learn in order to complete the Lab 6
+
+4) Let's review and complete ObjectsInArray.html form
+
+    NOTE:  There are Lots of Errors or missing code in the ObjectsInArrays.js file that you need to fix
+
+    - How to validate the form fields via html when there is no Action on the form?
+        - Email
+        - Required
+    - How do we prevent the user from adding a blank record?
+    - How to validate the form fields via JavaScript
+    - How to retrieve the value of the radio button
+    - Why is the length of the array incorrect?
+    - When do we display the Clear, Next, Previous, Delete buttons?
+    - How do we know which record to delete?

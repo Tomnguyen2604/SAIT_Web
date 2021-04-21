@@ -1,0 +1,49 @@
+/*arrayofobjects.js*/
+
+var objectarray=[];
+var i=0;//index
+
+function addToArray() {
+	var clientobject={lastname,firstname,address,postalcode};
+	clientobject.lastname=document.getElementById("lastname").value;
+	clientobject.firstname=document.getElementById("firstname").value;
+	clientobject.address=document.getElementById("address").value;
+	clientobject.postalcode=document.getElementById("postalcode").value;
+	objectarray.push(clientobject);
+	displayList();
+	
+	
+}
+
+function displayList() {
+	var client;
+	var displayRadiobuttions=""
+	
+	for(var i=0; i< objectarray.length;i++)
+ 		{
+ 			
+ 			//local instance of book
+ 		var clientobject={lastname,firstname,address,postalcode};
+ 		clientobject=objectarray[i];
+ 		
+ 		client=clientobject.lastname + " , "+clientobject.firstname+" , "+clientobject.address+" , "+clientobject.postalcode;
+ 		//thisList+="<br>";
+ 		//include this into a radio button<input type="radio" name="listitem">
+ 		displayRadiobuttions+="<input type=radio name=listitem ";
+ 		displayRadiobuttions+=" value="+i+" ";
+ 		displayRadiobuttions+=" onchange=deleteItem(this.value)>";
+ 		displayRadiobuttions+=client+"<br>";
+ 		
+ 		
+ 		}
+ 		
+//display list
+document.getElementById("showlist").innerHTML=displayRadiobuttions;
+	
+}
+
+function deleteItem(i) {
+	objectarray.splice(i,1);
+	displayList();
+	
+}

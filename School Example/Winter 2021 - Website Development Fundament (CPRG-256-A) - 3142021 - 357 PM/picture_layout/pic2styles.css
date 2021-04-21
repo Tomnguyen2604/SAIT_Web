@@ -1,0 +1,13 @@
+﻿
+img{
+	width:300px;
+	height: auto;
+}
+.row {
+    display: flex;
+}
+/*with 3 pictures, use 33.33%, for 4 use 25% etc*/
+.col {
+    flex: 33.33%;
+    padding: 5px;
+}

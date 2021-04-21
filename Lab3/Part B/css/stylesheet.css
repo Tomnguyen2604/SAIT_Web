@@ -1,0 +1,16 @@
+﻿@media all {
+
+    body {
+        background-image: url('photo/cover.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .header {
+        border-color: white;
+    }
+
+        .header h1 {
+            text-align: center;
+        }
+}

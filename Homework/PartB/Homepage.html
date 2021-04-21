@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
+    <title></title>
+</head>
+<body>
+
+    <div class="glass_1">
+        <table class="center" style="border: 1.5px double black;">
+            <tr>
+                <td>Current Date</td>
+                <td><input type="datetime-local" id="time" name="time"></td>
+            </tr>
+            <tr>
+                <td>Client Name</td>
+                <td><input type="text" id="name" name="name" value="" placeholder="Name"><br></td>
+            </tr>
+            <tr>
+                <td>Street Address</td>
+                <td><input type="text" id="Street" name="Street" value="" placeholder="Street"><br></td>
+            </tr>
+            <tr>
+                <td>Postal Code</td>
+                <td>
+                    <input type="text"
+                           name="postol_code"
+                           id="postol_code"
+                           pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+                           required="required" placeholder="A0A 0A0"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number </td>
+                <td>
+                    <input type="tel"
+                           name="phone_number"
+                           id="phone_number"
+                           pattern="^\d{3}-\d{3}-\d{4}$"
+                           required="required" placeholder="Phone" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" required placeholder="xxxx@xxx.com"/> <br /></td>
+            </tr>
+            <tr>
+                <td>Choice of Pickup or Delivery</td>
+                <td>
+                    <input type="radio" id="business" name="business" value="business">
+                    <label for="business">Business</label><br>
+                    <!--Phone number-->
+                    <input type="radio" id="personal" name="personal" value="personal">
+                    <label for="personal">Personal</label><br>
+                </td>
+
+            </tr>
+        </table>
+        <input type="button" value="Submit" onclick="order()"; return false;" />
+    </div>
+   <!--Choice board-->
+    <div class="glass_1">
+        <h3> Hamper Name </h3>
+        <div class="items">
+
+            <table class="center" style="border: 1.5px double black;">
+                <tr>
+                    <td>Hamper Name</td>
+                    <td>Price</td>
+                    <td>Quantity Order</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Hamper </td>
+                    <td>20kg: $30.00</td>
+                    <td>
+                    <input type="number"
+                           id="vege_hamp"
+                           required="required" placeholder="How many?" />
+                </td>
+                </tr>
+                <tr>
+                    <td>Fruit Hamper</td>
+                    <td>10kg: $20.00</td>
+                    <td>
+                        <input type="number"
+                               id="fruit_hamp"
+                               required="required" placeholder="How many?" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fresh Chicken</td>
+                    <td>$4/kg</td>
+                    <td>
+                        <input type="number"
+                               id="fresh_chicken"
+                               required="required" placeholder="How many?" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pork</td>
+                    <td>$5/kg</td>
+                    <td>
+                        <input type="number"
+                               id="pork"
+                               required="required" placeholder="How many?" />
+                    </td>
+                </tr>
+
+            </table>
+
+           
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url("../photo/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg");
+	background-size: cover;
+	text-align: center;
+		
+}
+
+div.transbox{
+	font-size: 18px;
+	margin: 30px;
+  color: white;
+  border: 1px solid;
+  opacity: .9;
+}
+div.transbox tr, td {
+  margin: 5%;
+  font-weight: bold;
+}

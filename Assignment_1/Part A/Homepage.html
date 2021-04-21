@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/Scripts.js"></script>
+    <title>Converting Measure</title>
+</head>
+<body>
+    <div class="measure">
+        <h1>Converter Machine</h1>
+        <table>
+            <tr>
+                <th>Litres to Gallons</th>
+            </tr>
+            <tr>
+                <td>Litres</td>
+                <td><input type="number" id="litres" min="0" onchange="convertLitres(this.value);"></td>
+            </tr>
+            <tr>
+                <td>Gallons</td>
+                <td><input type="number" id="gallons" min="0" onchange="convertGallons(this.value);"></td>
+            </tr>
+            <!--End of Liter and Gallon-->
+            <tr>
+                <th>Metres to Feet</th>
+            </tr>
+            <tr>
+                <td>Meters</td>
+                <td>
+                    <input type="number" id="metres" min="0" onchange="convertMetres(this.value);">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Feet</td>
+                <td>
+                    <input type="number" id="feet" min="0" onchange="convertFeet(this.value);">
+                </td>
+            </tr>
+            <!--End of metres to feet-->
+            <tr>
+                <th>Kilogram to Pounds</th>
+            </tr>
+            <tr>
+                <td>Kilogram</td>
+                <td>
+                    <input type="number" id="kilo" min="0" onchange="convertKilo(this.value);">
+                </td>
+            </tr>
+            <tr>
+                <td>Pounds</td>
+                <td>
+                    <input type="number" id="pounds" min="0" onchange="convertPounds(this.value);">
+                </td>
+            </tr>
+            <!--end of Kilo to Pounds-->
+
+
+
+
+            <tr>
+                <th>Ounces to Gram</th>
+            </tr>
+            <tr>
+                <td>Gram</td>
+                <td>
+                    <input type="number" id="gram" min="0" onchange="convertGram(this.value);">
+                </td>
+            </tr>
+            <tr>
+                <td>Ounces</td>
+                <td>
+                    <input type="number" id="oz" min="0" onchange="convertOz(this.value);">
+                </td>
+            </tr>
+            <!--end of Kilo to Ounces-->
+        </table>
+    </div>
+
+</body>
+</html>

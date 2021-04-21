@@ -1,0 +1,70 @@
+﻿body{
+	background: #D7C0D0;
+}
+
+/* the coffee mug and the coffee will be created mostly using box shadows */
+.coffee-mug{
+	background: #3F2616;
+	position: relative;
+	margin: 150px auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/* the following box-shadow values are going to create the coffee mug, a coffee ring, and some coffee splatters (our mug is a little leaky) */
+	box-shadow: 0 0 0 10px #442918,
+							 0 0 0 25px #3C2415,
+							 0 0 0 42px #E4E6B2,
+							 0 0 0 65px #EFF0D1,
+							 0 120px 0 -25px #3C2415,
+							 100px 70px 0 -25px #3C2415,
+							 80px 140px 0 -10px #3C2415,
+							 0px 210px 0 -55px #3C2415,
+							 20px 250px 0 -65px #3C2415;
+}
+
+/* cool right? except the mug needs a handle */
+.coffee-mug::before{
+	content: '';
+	position: absolute;
+	background: #EFF0D1;
+	height: 80px;
+	width: 60px;
+	top: -85px;
+	right: -75px;
+	border-radius: 5px;
+	box-shadow: inset 0px 50px 0 0px #EFF0D1;
+	/* transform lets us rotate the handle on an angle */
+	transform: rotate(45deg);
+}
+
+/* that coffee could look a little more realistic. let's add a simple ripple effect */
+.coffee-mug::after{
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	border: 3px solid #77665C;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	opacity: 0.2;
+	/* a little bit of animation */
+	animation: rings 3s ease-out infinite;
+}
+
+@keyframes rings{
+	to{
+		width: 150px;
+		height: 150px;
+		opacity: 0;
+	}
+}
+h1 {
+	text-align: center;
+}

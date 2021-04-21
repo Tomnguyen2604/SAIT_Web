@@ -1,0 +1,52 @@
+﻿@media all {
+    body{
+        font-family: sans-serif;
+        margin: 0px;
+        font-family: 'Dancing Script', cursive;
+        padding: 20px 30px;
+        background-color: lightskyblue;
+        font-size: 18px;
+
+        
+    }
+
+    .header {
+        background-color: aqua;
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+    }
+    .text {
+        background-color: white;
+    }
+    .text h2{
+        text-align: center;
+    }
+}
+.text p::first-letter {
+    font-size: 200%;
+    color: forestgreen;
+    font-family: 'Lobster Two', cursive;
+}
+
+.photo img {
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    float: right;
+}
+.photo fig {
+    figcaption
+
+{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 0;
+}
+}
+a {
+    color: deepskyblue;
+}
+a:hover {
+    color: black;
+}

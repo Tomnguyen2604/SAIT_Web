@@ -1,0 +1,45 @@
+﻿body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 1000% 1000%;
+    animation: gradient 15s ease infinite;
+}
+
+.container {
+    border: 2px solid white;
+    width: 20%;
+}
+
+.container {
+    margin-left: 40%;
+}
+
+    .container form {
+        width: 80%;
+        align-content: center;
+    }
+
+        .container form label {
+            margin-left: 5px;
+        }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container2 {
+    margin-left: 40%;
+    width: 20%;
+}
+    .container2 table, th, td {
+        border: 2px solid white;
+        border-collapse: collapse;
+    }

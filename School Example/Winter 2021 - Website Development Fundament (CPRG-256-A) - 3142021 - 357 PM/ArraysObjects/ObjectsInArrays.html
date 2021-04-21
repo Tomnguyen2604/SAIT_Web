@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Form with Objects and Arrays</title>
+    <script type='text/javascript' src='ObjectsInArrays.js'></script>
+    <link type='text/css' rel='stylesheet' href='ObjectsInArrays.css'>
+</head>
+
+<body>
+    <h3>Example of Objects, Arrays, Forms</h3>
+    <form id="Entry">
+        <div class="field">
+            <label for="Name" class="form-label required">Name: </label>
+            <input type="text" id="Name" name="Name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+            <label for="Address" class="form-label required">Address: </label>
+            <input type="text" id="Address" name="Address" placeholder="Your Address" required>
+        </div>
+        <div class="field">
+            <label for="City" class="form-label required">City: </label>
+            <input type="text" id="City" name="City" placeholder="City" required>
+        </div>
+        <div class="field">
+            <label for="Email" class="form-label  required">Email: </label>
+            <input type="email" id="Email" name="Email" required>
+        </div>
+        <div class="field-grouping">
+            <label class="label-question">Do you have pets?</label>
+            <br/>
+            <input type="radio" id="HavePet-No" name="HavePets" value="0" required>
+            <label for="HavePets-No">No Pets</label>
+            <input type="radio" id="HavePet-Yes" name="HavePets" value="1">
+            <label for="HavePets-Yes">Have Pets</label>
+        </div>
+        <div class="button-area">
+            <input type="button" value="Add" onclick="AddToArray()">
+            <input type="button" style="visibility: hidden;" value="New" onclick="NewItem()">
+            <br/>
+            <input type="button" style="visibility: hidden;" value="Next" onclick="LoadNextFromArray(myFormNamespace.Cursor)">
+            <input type="button" style="visibility: hidden;" value="Prev" onclick="LoadPrevFromArray(myFormNamespace.Cursor)">
+            <input type="button" style="visibility: hidden;" value="Delete" onclick="DeleteFromArray(myFormNamespace.Cursor)">
+        </div>
+    </form>
+
+    <p>Items Entered</p>
+    <div id="ItemsEntered">
+        <!-- MOCKUP -->
+        <!--
+        <header>
+            <span id="hdr-Id">Id</span>
+            <span id="hdr-Name">Name</span>
+            <span id="hdr-Address">Address</span>
+            <span id="hdr-City">City</span>
+            <span id="hdr-Email">Email</span>
+            <span id="hdr-Pets">Pets</span>
+            <span id="hdr-Actions">Actions</span>
+        </header>
+        <div class="Row" id="row-0">
+            <span class="Row-Id">1</span>
+            <span class="Row-Name">Johnny Test</span>
+            <span class="Row-Address">123 Easy Street</span>
+            <span class="Row-City">Calgary</span>
+            <span class="Row-Email">Johnny@Test.com</span>
+            <span class="Row-Pets">Yes</span>
+            <span class="Row-Actions">
+                <span class="Delete-Row" onclick="DeleteFromArray(0);">Delete</span>
+            </span>
+        </div>
+        -->
+    </div>
+</body>
+
+</html>

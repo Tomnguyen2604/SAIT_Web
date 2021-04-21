@@ -1,0 +1,5 @@
+[0212/151510.351:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0212/151510.365:WARNING:gpu_process_host.cc(1205)] The GPU process has crashed 1 time(s)
+[0212/151510.496:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0212/151510.507:WARNING:gpu_process_host.cc(1205)] The GPU process has crashed 2 time(s)
+[0212/151511.514:WARNING:spdy_session.cc(3326)] Received HEADERS for invalid stream 1

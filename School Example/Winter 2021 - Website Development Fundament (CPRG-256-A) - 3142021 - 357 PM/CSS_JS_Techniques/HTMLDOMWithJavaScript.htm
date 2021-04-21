@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example of JavaScript accessing web page elements</title>
+    <script type="text/javascript" src="myJSfunctions.js"></script>
+    <link type="text/css" rel="stylesheet" href="HTMLDOMWithJavaScript.css">
+</head>
+
+<body onload="ShowDateTime();")>
+    <h3>Example Accessing HTML elements in the DOM with JavaScript</h3>
+    <div id="box">
+        <div class="field">
+            <label for="firstName-field" class="label required">First Name:</label>
+            <input type="text" id="firstName-field" name="FirstName" required placeholder="First Name">
+        </div>
+        <div class="field">
+            <label for="lastName-field" class="label required">Last Name:</label>
+            <input type="text" id="lastName-field"  name="LastName" required placeholder="Last Name">
+        </div>
+        <div class="field">
+            <label for="rating-field" class="label">Rating:</label>
+            <input type="range" id="rating-field" name="Rating" min=0 max=5>
+        </div>
+    </div>
+    <div class="button-area">
+        <input type="button" class="left" value="Show First Name" onclick="ShowFieldValue('firstName-field');">
+        <input type="button" value="Show LastName Name" class="left" onclick="ShowFieldValue('lastName-field');">
+        <input type="button" value="Show Rating" class="left" onclick="ShowFieldValue('rating-field');">
+        <input type="button" value="Show Form Data" class="left" onclick="ShowFormData('output-area');">
+    </div>
+    <div id="output-area">
+        <!-- Nothing here yet, but we will change it using JavaScript -->
+    </div>
+    <p>The current Date/Time is:</p>
+    <div id="time-update">
+        <!-- The time will be shown here using JavaScript -->
+    </div>
+</body>
+
+</html>

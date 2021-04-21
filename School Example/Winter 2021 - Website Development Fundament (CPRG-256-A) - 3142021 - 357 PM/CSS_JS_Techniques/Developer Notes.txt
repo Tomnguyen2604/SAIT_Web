@@ -1,0 +1,114 @@
+Citations
+=========
+
+        Using CSS to display elements on hover
+        ======================================
+        https://www.w3schools.com/html/html5_semantic_elements.asp
+        https://www.w3schools.com/howto/howto_css_display_element_hover.asp
+        https://www.w3schools.com/css/css_tooltip.asp
+        https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+        https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+        https://www.w3schools.com/css/css_rwd_images.asp
+        https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_mediaq2
+
+
+        HTML Document Object Model (DOM)
+        ================================
+        https://www.w3schools.com/jsref/dom_obj_document.asp
+
+        Retrieving information from the HTML using the DOM
+        ==================================================
+        https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+        https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
+        https://www.w3schools.com/jsref/met_doc_getelementsbyname.asp
+        https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
+
+        Running JavaScript when the page loads
+        ======================================
+        https://www.w3schools.com/jsref/event_onload.asp
+
+
+        JavaScript debugging
+        ====================
+        You can purchase this online course (which frequently goes on sale) to learn more about
+        debugging JavaScript, but we'll teach you most of these techniques in this class
+        https://www.udemy.com/course/javascript-debugging-crash-course/
+
+        JavaScript Reference
+        ====================
+        You should be using W3Schools for all your learning on the JavaScript langauge
+        https://www.w3schools.com/js/default.asp
+
+        If you know how to write JavaScript, and you want to get significantly better, 
+        I also recommend the following ebook series
+
+                "You don't know JS" by Kyle Simpson
+
+        You can read the six books in the series online for free using the GitHub 1st edition version from 
+        https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
+
+        The first edition of this series of six books is still available in print form on Amazon.ca, 
+        but the electronic version of the 1st edition is no longer available to purchase
+
+        The GitHub 2nd edition is on GitHub as well, but all six books are not yet available in the updated 2nd edition format
+        https://github.com/getify/You-Dont-Know-JS
+
+        If you want the ebook 2nd edition version (Kindle) you can purchase the first & secibd book in the series at
+        You Don't Know JS Yet: Get Started (second edition)
+        https://www.amazon.ca/You-Dont-Know-JS-Yet-ebook/dp/B084BNMN7T
+        You Don't Know JS Yet: Scope & Closures (second edition)
+        https://www.amazon.ca/You-Dont-Know-JS-Yet-ebook/dp/B08634PZ3N/
+
+
+Important Information
+=====================
+We recommend that you do not use the alert() method in JavaScript as a way of
+displaying information to the user.  We also don't recommend you use it for debugging
+your code.  We'll show you other debugging techniques using the inspector build into the 
+web browser to set breakpoints, examine variables, and how to write debugging information
+into the web browser console, or to send it to a backend server for tracking bugs/what is happening
+
+CSSTechniques
+=============
+The CSS in this HTML/CSS combination shows how we can use CSS selectors to
+alter the behavior of the web page when users hover over elements on the 
+web page.
+
+The JavaScript in the CSSTechniques.htm file also shows the fact that JavaScript
+is not strongly typed, and variables can morph between different data types
+at runtime.
+
+
+HTMLDOMWithJavaScript
+=====================
+In the HTMLDOMWithJavaScript.htm file you'll see that the time clock does not update when the
+alert() dialog is open, clearly showing that the alert() method will block all other JavaScript
+from running.  
+
+The onload="" attribute is placed on the <body> tag to initiate calling the JavaScript function 
+which initially displays the time on the web page. The function then calls itself repeatedly 
+every 1 second by using the setTimeout() function
+
+We also show you in the myJSFunctions.js file the proper way to write JavaScript code that 
+checks for possible problems, and then handles them instead of letting the code fail with an
+error or a bug that is being caused by poor programming methods.
+
+
+ExampleCalculator
+=================
+Note the formula for board feet was based upon information from https://www.omnicalculator.com/construction/board-foot#what-is-a-board-foot
+
+This example uses the onchange="" property on <input> tags to call a JavaScript function that then
+examines the web page DOM, getting the information typed into the input fields, converts that information
+from string to floating point variables, and then uses the floating point variables in a math equation to
+calculate the board feet of lumber you purchase.   
+
+The board foot is not metric, and while a metric version of this calculation can be created, it was too
+complex for this example, so it is only in imperial units (feet and inches)
+
+These are some functions we had to use to convert the text values typed into the <input> fields formula
+strings into numeric data types (float) so that we could use them in the formula
+
+https://www.w3schools.com/jsref/jsref_parsefloat.asp 
+https://www.w3schools.com/js/js_number_methods.asp
+

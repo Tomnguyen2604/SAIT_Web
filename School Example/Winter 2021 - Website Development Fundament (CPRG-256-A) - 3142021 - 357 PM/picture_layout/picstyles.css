@@ -1,0 +1,22 @@
+﻿body
+{
+}
+
+img{
+    width:100%;
+}
+
+/*3 image containers 33.33% each */
+.col {
+    float: left;
+    width: 33.33%;
+    padding:5px;
+   
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

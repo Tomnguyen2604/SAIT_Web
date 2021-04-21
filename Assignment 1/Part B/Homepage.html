@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/Script.js"></script>
+    <title>Café Europa’</title>
+
+
+</head>
+<body>
+
+    <!--background-->
+
+    <header>
+        <div class="glass">
+            <div class="logo">
+                <h1>Café Europa</h1>
+                <div class="current" id="current">
+                    <script type="text/javascript">
+                        window.onload = function () {
+                            var today = new Date();
+                            var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+                            document.getElementById("current").innerHTML = "Today is:" + "  " + month[today.getMonth()] + " " + today.getDate() + "," + today.getFullYear();
+                        }
+                    </script>
+                </div>
+            </div>
+
+    </header>
+    <!--Table Form-->
+    <div class="form">
+        <table>
+            <tr>
+                <th colspan="2">Café Europa</th>
+
+            </tr>
+            <tr>
+
+                <td>
+                    <label>Name:  </label>
+                    <input type="text" id="name" name="name" maxlength="25" required="required" placeholder="John Doe" />
+
+                </td>
+            <tr>
+                <td>
+                    <label for="time">Birthday (date and time):</label>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+                </td>
+
+            </tr>
+            <td>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(000) 000-0000">
+            </td>
+        </table>
+    </div>
+
+
+    <!--Pizza form-->
+    <div class="glass_1">
+        <h3> Neapolitian Style Pizza </h3>
+        <div class="items">
+            <div>
+                <img src="img/1.jpg">
+                <p>Margherita Pizza</p>
+                <h5>$12.00</h5>
+                <span></span>
+                <input type="number" min="0" id="margherita" name="Margherita" value="0"><br />
+
+            </div>
+            <br>
+            <div>
+                <img src="img/2.jpg" />
+                <p>Quattro Formaggi</p>
+                <h5>$12.50</h5>
+                <span></span>
+                <input type="number" min="0" id="quattro" name="quattro" value="0"><br />
+
+            </div>
+            <br>
+            <div>
+                <img src="img/3.jpg" width="200px">
+                <p>Capricciosa</p>
+                <h5>$13.00</h5>
+                <span></span>
+                <input type="number" min="0" id="capricciosa" name="capricciosa" value="0"><br />
+
+            </div>
+        </div>
+    </div>
+
+    <!--end of pizza food-->
+    <!--Sandwich form-->
+    <div class="glass_2">
+        <h3>Sandwich Choices</h3>
+        <div class="items">
+            <div>
+                <img src="img/4.jpg" width="200px">
+                <p>Schnitzel</p>
+                <h5>$8.50</h5>
+                <span></span>
+                <input type="number" min="0" id="schnitzel" name="schnitzel" value="0"><br />
+
+            </div>
+            <br>
+            <div>
+                <img src="img/5.jpg">
+                <p>Mixed Grill</p>
+                <h5>$9.50</h5>
+                <span></span>
+                <input type="number" min="0" id="mixed_grill" name="mixed_grill" value="0"><br />
+
+            </div>
+            <br>
+            <div>
+                <img src="img/6.jpg">
+                <p>Big Beef on a Bun</p>
+                <h5>$10.00</h5>
+                <span></span>
+                <input type="number" min="0" id="beef_on_bun" name="beef_on_bun" value="0"><br />
+
+            </div>
+        </div>
+    </div>
+    <!--end of pizza food-->
+    <!--Bevarages form-->
+
+    <div class="glass_3">
+        <h3>Bevarages Choices</h3>
+        <div class="items">
+            <div>
+                <img src="img/7.jpg">
+                <p>Coffee</p>
+                <h5>$2.00</h5>
+                <span></span>
+                <input type="number" min="0" id="coffee" name="coffee" value="0"><br />
+
+            </div>
+            <br>
+            <div>
+                <img src="img/8.jpg">
+                <p>Latte</p>
+                <h5>$2.50</h5>
+                <span></span>
+                <input type="number" min="0" id="latte" name="latte" value="0"><br />
+
+            </div>
+            <br>
+            <div>
+                <img src="img/9.jpg">
+                <p>Soft Drink</p>
+                <h5>$1.75</h5>
+                <span></span>
+                <input type="number" min="0" id="soft_drink" name="soft_drink" value="0"><br />
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--end of Bevarages-->
+
+    <div class="glass_4">
+        <input type="button" value="Submit" onclick="price(); return false;" />
+        <h2>Your Order Details</h2><h2><span id="result"></span></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+div#box {
+    display: block;
+    border: 1px solid rgb(107, 99, 99);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 18%;
+    background-color:rgba(48, 219, 48, 0.431);
+}
+.button-area {
+    margin: 50px 0 40px 0;
+    max-width: 60%;
+    display: block;
+}
+.button-area input {
+    margin-right: 4px;
+}
+.field {
+    margin-block-start: 1em;
+    margin-block-end: 1em; 
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.label {
+    margin-top: 3px;
+    justify-content: left;
+}
+.field input {
+    justify-content: right;
+}
+.required::after {
+    content: "*";
+    color: red;
+}
+#rating-field {
+    float: right;
+}
+#rating-field::before {
+    content: "0";
+    text-shadow: 1px 1px rgb(153, 153, 153);
+    padding-right: 3px;
+}
+#rating-field::after {
+    content: "5";
+    text-shadow: 1px 1px rgb(153, 153, 153);
+    padding-left: 3px;
+}
+.left { float: left; }
+div#output-area {
+    clear: both;    /* This clears any floats */
+    display: block;
+}

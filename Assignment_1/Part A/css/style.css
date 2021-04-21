@@ -1,0 +1,18 @@
+﻿header {
+    text-align: center;
+}
+body{
+    background-color: deepskyblue;
+    background-repeat: no-repeat;
+}
+.measure {
+    border: 5px double black;
+    width: 35%;
+    height: 40%;
+    left: 20%;
+    margin-right: 10%;
+    margin-left: 32%;
+}
+.measure h1{
+    text-align: center;
+}

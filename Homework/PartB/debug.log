@@ -1,0 +1,10 @@
+[0213/155349.622:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0213/155349.643:WARNING:gpu_process_host.cc(1205)] The GPU process has crashed 1 time(s)
+[0213/155349.733:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0213/155349.742:WARNING:gpu_process_host.cc(1205)] The GPU process has crashed 2 time(s)
+[0213/155356.102:INFO:CONSOLE(62)] "Uncaught ReferenceError: price is not defined", source: file:///C:/Users/rider/OneDrive/Desktop/School/Web%20Developer/Homework/PartB/Homepage.html (62)
+[0213/155356.560:INFO:CONSOLE(62)] "Uncaught ReferenceError: price is not defined", source: file:///C:/Users/rider/OneDrive/Desktop/School/Web%20Developer/Homework/PartB/Homepage.html (62)
+[0213/155356.705:INFO:CONSOLE(62)] "Uncaught ReferenceError: price is not defined", source: file:///C:/Users/rider/OneDrive/Desktop/School/Web%20Developer/Homework/PartB/Homepage.html (62)
+[0213/155908.279:INFO:CONSOLE(62)] "Uncaught ReferenceError: button is not defined", source: file:///C:/Users/rider/OneDrive/Desktop/School/Web%20Developer/Homework/PartB/Homepage.html (62)
+[0213/155908.467:INFO:CONSOLE(62)] "Uncaught ReferenceError: button is not defined", source: file:///C:/Users/rider/OneDrive/Desktop/School/Web%20Developer/Homework/PartB/Homepage.html (62)
+[0213/155908.614:INFO:CONSOLE(62)] "Uncaught ReferenceError: button is not defined", source: file:///C:/Users/rider/OneDrive/Desktop/School/Web%20Developer/Homework/PartB/Homepage.html (62)

@@ -1,0 +1,87 @@
+/* This must occur before the hovers */
+.hidden {
+    display: none;
+}
+.touch-disabled {
+    display: block;
+}
+figure {
+    text-align: center;
+}
+.small-image {
+    width: 5%;
+    min-width: 50px;
+    border: 1px slategray solid;
+}
+
+@media touch {
+    .touch-enabled {
+        display: block;
+    }
+    .touch-disabled {
+        display: none;
+    }
+}
+/* For device width smaller than 400px: */
+@media all {
+
+    .medium-image {
+        /* indicate where we can it to display */
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        width: 45%;
+        height: auto;
+        border: 1px solid slateblue;
+        border-radius: 5px;
+    }
+     .medium-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #PETG-Green-Small:hover ~ .hidden#PEG-Green-Medium  {
+        display: block;
+    }
+    #PETG-Gold-Small:hover ~ .hidden#PEG-Gold-Medium  {
+        display: block;
+    }
+    #PETG-Black-Small:hover ~ .hidden#PEG-Black-Medium  {
+        display: block;
+    }
+}
+@media only screen and (min-device-width: 400px) {
+    .large-image {
+        /* indicate where we can it to display */
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 65%;
+        height: auto;
+        border: 3px double slateblue;
+        border-radius: 5px;
+    }
+    .large-image img {
+        width: 100%;
+        height: auto;
+    }
+    #PETG-Green-Small:hover ~ .hidden#PEG-Green-Medium  {
+        display: none;
+    }
+    #PETG-Gold-Small:hover ~ .hidden#PEG-Gold-Medium  {
+        display: none;
+    }
+    #PETG-Black-Small:hover ~ .hidden#PEG-Black-Medium  {
+        display: none;
+    }
+    #PETG-Green-Small:hover ~ .hidden#PEG-Green-Large  {
+        display: block;
+    }
+    #PETG-Gold-Small:hover ~ .hidden#PEG-Gold-Large  {
+        display: block;
+    }
+    #PETG-Black-Small:hover ~ .hidden#PEG-Black-Large  {
+        display: block;
+    }
+
+}

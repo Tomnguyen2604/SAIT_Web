@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>html5classdemo</title>
+<meta name="generator" content="Bluefish 2.2.7" >
+<meta name="author" content="aschmidt" >
+<meta name="date" content="2016-02-04T13:06:44-0700" >
+<meta name="copyright" content="">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="classdemo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>HTML 5 Form Example</h1>
+<br>
+<form action="mailto:personal@sait.ca" method="post" enctype="text/plain">
+<table cellpadding="5" class="formtable">
+<tr><td>Your Name:</td><td><input type="text" id="myname" size="25" maxlength="25" autofocus="yes"></td></tr>
+<tr><td>E-mail:</td><td><input type="email" id="email" size="25" placeholder="example@example.net" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td></tr>
+<tr><td>Phone</td><td><input type="tel" size="25" id="phone" placeholder="### ### ####" pattern="\d{3} \d{3} \d{4}"></td></tr>
+<tr><td>Rating(1-5)</td><td><input type="number" id="rating" size="5" min="1" max="5"></td></tr>
+<tr><td>Range(0-10)</td><td><input type="range" id="points" min="0" max="10"></td></tr>
+<tr><td>Birthday</td><td><input type="date" id="bday"></td></tr>
+<tr><td>Favourite Colour</td><td><input type="color" id="color"></td></tr>
+</table>
+<input type="submit" id="submit" value="Submit">
+</form>
+<br>
+
+<div class="carpics">
+<table>
+<tr><td>
+<figure>
+<img src="pics/exner.jpg" alt="exner concept car">
+<figcaption>Concept Car by Virgil Exner Jr.</figcaption>
+</figure>
+
+</td>
+<td>
+<figure>
+<img src="pics/shelby_daytona.jpg" alt="shelby daytona">
+<figcaption>Shelby Daytona</figcaption>
+</figure>
+
+</td>
+<td>
+<figure>
+<img src="pics/countach.jpg" alt="lamborghini coutach">
+<figcaption>Lamborghini Countach</figcaption>
+</figure>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>

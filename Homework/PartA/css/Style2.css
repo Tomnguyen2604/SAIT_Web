@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0px;
+    background: url(https://superdevresources.com/wp-content/uploads/2015/12/new-york-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+
+    .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+p {
+    width: 90%;
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+    p::first-letter {
+        font-size: 200%;
+        font-weight: bold;
+    }
+
+.content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 40px auto;
+    background: rgba(22,22,22, 0.5);
+    width: 100%;
+    max-width: 960px;
+    border-radius: 5px;
+    padding-bottom: 32px;
+}
+
+    .content p {
+        min-height: 120px;
+        width: 90%;
+        max-width: 700px;
+        vertical-align: middle;
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 80px;
+    }
+
+    .content img {
+        width: 45%;
+        height: 45%;
+        float: right;
+        padding: 0.7rem;
+    }
