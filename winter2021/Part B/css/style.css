@@ -1,3 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
-
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #4B0082;
+}
+h2 {
+    text-align: center;
+    color: white;
+    
+}
+div {
+    opacity: 2;
+}
+body {
+    margin: 10px;
+    color: white;
+    background-color: blue;
+    padding: 30px;
+    }

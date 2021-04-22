@@ -9,10 +9,11 @@ html {
     body{
     margin: 0;
     font-family: 'PT Sans', sans-serif;
-    background-image: url('../images/background.jpg');
+    background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Circle-Simple-Background-Image-1.jpg');
+    background-size: auto;
     }
     header, footer {
-    background-color: #9e9d24;
+    background-color: #2633ec;
     text-align: center;
     color: #f0f4c3;
     font-family: 'Rowdies', cursive;
