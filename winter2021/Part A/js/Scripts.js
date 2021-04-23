@@ -31,10 +31,10 @@ function loadXML() {
 	
 	
 	//create event listent
-	document.getElementById("name").addEventListener("keyup", function (){ findname(this.value);},false);
 	document.getElementById("sector").addEventListener("keyup", function (){ findSector(this.value);},false);
-	document.getElementById("month").addEventListener("keyup", function (){ findMonth(this.value);},false);
-	document.getElementById("year").addEventListener("keyup", function (){ findYear(this.value);},false);
+  document.getElementById("community").addEventListener("keyup", function (){ findCommunity(this.value);},false);
+  document.getElementById("year").addEventListener("keyup", function (){ findyear(this.value);},false);
+
 	
 	xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -48,36 +48,61 @@ function loadXML() {
 	
 }
 
-function findname(input) {
-	json = JSON.parse(xhr.responseText);
-	var output = "<tr><th> Sector </th><th> Community Name </th><th> Description </th><th> Year </th><th> Count </th><th>Location</th></tr><br>";
-	for (var i = 0; i < json.length; i++) {
-		var obj = json[i];
-		if(obj.community_name.toUpperCase().search(input.toUpperCase()) != -1){
-			output+="<tr><td>"
-			output+=obj.sector
-			output+="</td><td>"
-			output+=obj.community_name
-			output+="</td><td>"
-			output+=obj.category
-			output+="</td><td>"
-			output+=obj.year
-			output+="</td><td>"
-			output+=obj.count
-			output+="</td><td>"
-			output+='<a href="https://www.google.com/maps/place/"' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
-			output+=">Location</a></td></tr><br>"
-		}
-	}
-	document.getElementById("records").innerHTML = output;
-}
 function findSector(input) {
+	json = JSON.parse(xhr.responseText);
+  input= input.toUpperCase();
+	var output = "<tr><th> Sector </th><th> Community Name </th><th> Category </th><th> Year </th><th> Count </th><th>Location</th></tr><br>";
+	for (var i = 0; i < json.length; i++) {
+		var obj = json[i];
+		if(obj.sector.startsWith(input)){
+			output+="<tr><td>"
+			output+=obj.sector
+			output+="</td><td>"
+			output+=obj.community_name
+			output+="</td><td>"
+			output+=obj.category
+			output+="</td><td>"
+			output+=obj.year
+			output+="</td><td>"
+			output+=obj.count
+			output+="</td><td>"
+			output+='<a href=https://www.google.com/maps/place/' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
+			output+=">Location</a></td></tr><br>"
+		}
+	}
+	document.getElementById("records").innerHTML = output;
+}
+function findCommunity(input) {
+	json = JSON.parse(xhr.responseText);
+  input= input.toUpperCase();
+	var output = "<tr><th> Sector </th><th> Community Name </th><th> Description </th><th> Year </th><th> Count </th><th>Location</th></tr><br>";
+	for (var i = 0; i < json.length; i++) {
+		var obj = json[i];
+		if(obj.community_name.startsWith(input)){
+			output+="<tr><td>"
+			output+=obj.sector
+			output+="</td><td>"
+			output+=obj.community_name
+			output+="</td><td>"
+			output+=obj.category
+			output+="</td><td>"
+			output+=obj.year
+			output+="</td><td>"
+			output+=obj.count
+			output+="</td><td>"
+			output+='<a href=https://www.google.com/maps/place/' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
+			output+=">Location</a></td></tr><br>"
+		}
+	}
+	document.getElementById("records").innerHTML = output;
+}
 
+function findyear(input) {
 	json = JSON.parse(xhr.responseText);
 	var output = "<tr><th> Sector </th><th> Community Name </th><th> Description </th><th> Year </th><th> Count </th><th>Location</th></tr><br>";
 	for (var i = 0; i < json.length; i++) {
 		var obj = json[i];
-		if(obj.sector.toUpperCase().search(input.toUpperCase()) != -1){
+		if(obj.year.search(input.toUpperCase()) != -1){
 			output+="<tr><td>"
 			output+=obj.sector
 			output+="</td><td>"
@@ -89,57 +114,7 @@ function findSector(input) {
 			output+="</td><td>"
 			output+=obj.count
 			output+="</td><td>"
-			output+='<a href="https://www.google.com/maps/place/"' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
-			output+=">Location</a></td></tr><br>"
-		}
-	}
-	document.getElementById("records").innerHTML = output;
-}
-function findYear(input) {
-	json = JSON.parse(xhr.responseText);
-	var output = "<tr><th> Sector </th><th> Community Name </th><th> Description </th><th> Year </th><th> Count </th><th>Location</th></tr><br>";
-	for (var i = 0; i < json.length; i++) {
-		var obj = json[i];
-		if(obj.year.search(input) != -1){
-			output+="<tr><td>"
-			output+=obj.sector
-			output+="</td><td>"
-			output+=obj.community_name
-			output+="</td><td>"
-			output+=obj.category
-			output+="</td><td>"
-			output+=obj.month
-			output+="</td><td>"
-			output+=obj.year
-			output+="</td><td>"
-			output+=obj.count
-			output+="</td><td>"
-			output+='<a href="https://www.google.com/maps/place/"' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
-			output+=">Location</a></td></tr><br>"
-		}
-	}
-	document.getElementById("records").innerHTML = output;
-}
-function findMonth(input) {
-	json = JSON.parse(xhr.responseText);
-	var output = "<tr><th> Sector </th><th> Community Name </th><th> Description </th><th> Year </th><th> Count </th><th>Location</th></tr><br>";
-	for (var i = 0; i < json.length; i++) {
-		var obj = json[i];
-		if(obj.month.toUpperCase().search(input.toUpperCase()) != -1){
-			output+="<tr><td>"
-			output+=obj.sector
-			output+="</td><td>"
-			output+=obj.community_name
-			output+="</td><td>"
-			output+=obj.category
-			output+="</td><td>"
-			output+=obj.month
-			output+="</td><td>"
-			output+=obj.year
-			output+="</td><td>"
-			output+=obj.count
-			output+="</td><td>"
-			output+='<a href="https://www.google.com/maps/place/"' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
+			output+='<a href=https://www.google.com/maps/place/' + obj.geocoded_column.latitude + ',' + obj.geocoded_column.longitude
 			output+=">Location</a></td></tr><br>"
 		}
 	}
